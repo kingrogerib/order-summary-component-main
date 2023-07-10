@@ -1,0 +1,101 @@
+body
+  background-color: hsl(225, 100%, 94%)
+  margin: 0
+  padding: 0
+  font-size: 16px
+  font-family: 'Red Hat Display', sans-serif;
+
+.attribution
+   font-size: 11px; text-align: center;
+
+.attribution a 
+   color: hsl(228, 45%, 44%);
+
+.container 
+  display: flex;
+  flex-direction: column
+  align-items: center;
+  width: 480px;
+  background-color: hsl(0, 0%, 100%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  overflow: hidden;
+
+.illustration-hero
+  width: 100%
+  object-fit: cover
+  object-position: center;
+
+h1 
+  font-weight: 900
+  font-size: 1.5rem
+  margin-bottom: 0px
+
+ul  
+  list-style: none
+  padding-inline-start: 0
+  text-align: center
+  margin-bottom: 20px
+  padding: 0 5rem
+  li  
+    font-size: 16px
+    line-height: 1.5rem
+    margin-bottom: 20px
+  .text
+    color: hsl(224, 23%, 55%)
+
+button
+  font-family: 'Red Hat Display', sans-serif
+  font-weight: 700
+  background-color: hsl(245, 75%, 52%)
+  color: white
+  border: none
+  width: 100%
+  padding: 14px 0px
+  border-radius: 10px
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6)
+  margin-bottom: 20px
+  &:hover
+    cursor: pointer
+    background-color: hsl(245, 75%, 75%)
+
+.price-box
+  
+  display: flex
+  width: 100%
+  justify-content: space-evenly
+  align-items: center
+  background-color: hsl(225, 100%, 98%)
+  border: none 
+  border-radius: 10px
+  margin-bottom: 20px
+  .payment-plan
+    line-height: 0.4rem
+    .annual-plan
+      font-weight: 700
+  .change-link
+    color: hsl(245, 75%, 52%)
+    margin-left: 30px
+    font-weight: 700
+    &:hover
+      cursor: pointer
+      text-decoration: none
+      
+.cancel-order
+  color: hsl(224, 23%, 55%)
+  font-weight: 700
+  &:hover
+    color: hsl(224, 23%, 25%)
+    cursor: pointer
+
+@media (max-width: 375px) {
+  .container {
+    width: 360px
+  }
+  ul {
+    padding: 0 2rem
+  }
+}
